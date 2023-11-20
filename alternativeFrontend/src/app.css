@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-div {
+div,
+body {
 	@apply flex flex-col;
+}
+
+body {
+	min-height: 100dvh;
+}
+
+img {
+	@apply text-center align-middle text-black/50;
 }

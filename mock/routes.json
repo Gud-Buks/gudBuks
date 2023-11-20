@@ -1,0 +1,3 @@
+{
+  "/comments?bookId=:id": "/comments?_expand=user&bookId=:id"
+}
