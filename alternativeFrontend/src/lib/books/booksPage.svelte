@@ -12,7 +12,7 @@
 {#await getBooks()}
 	<div>Loading</div>
 {:then books}
-	<div>
+	<div class="flex-row gap-2 flex-wrap">
 		{#each books as book}
 			<BookItem {book} />
 		{/each}
