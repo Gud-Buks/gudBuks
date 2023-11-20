@@ -19,7 +19,7 @@
 	});
 </script>
 
-<div class="flex-1 items-center justify-between">
+<div class="flex-1 items-center justify-between p-2">
 	<div />
 	<div class="gap-6 max-w-xl w-full items-center">
 		<div class="flex-row items-center gap-2">
