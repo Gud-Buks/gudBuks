@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: 'postgres'
+    container_name: gudbuks_db
+    environment:
+      POSTGRES_DB: gudbuks
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: devonly
+    ports:
+      - '5432:5432'
