@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 div,
-body {
+body,
+form,
+section {
 	@apply flex flex-col;
+}
+
+button {
+	@apply flex flex-row items-center justify-center;
 }
 
 body {

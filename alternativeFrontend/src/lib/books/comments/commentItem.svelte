@@ -14,7 +14,7 @@
 	</div>
 	<div class="opacity-50 flex-row gap-2">
 		<div>
-			{comment.user.name}
+			{comment?.user?.name}
 		</div>
 		<div>
 			{timeAgo.format(date)}
