@@ -11,6 +11,9 @@ dependencies:
   javascript-time-ago:
     specifier: ^2.5.9
     version: 2.5.9
+  svelte-loading-spinners:
+    specifier: ^0.3.4
+    version: 0.3.4
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -2263,6 +2266,10 @@ packages:
     dependencies:
       svelte: 4.2.5
     dev: true
+
+  /svelte-loading-spinners@0.3.4:
+    resolution: {integrity: sha512-vKaW71QMCBcTNijAGc0mUl8k3DQ66iYmp6MB8BMGCXyWk82bTrcLy8FOnSm9fE+8q6TwzD6PLUoYFHt0II93Xw==}
+    dev: false
 
   /svelte-preprocess@5.1.0(postcss@8.4.31)(svelte@4.2.5)(typescript@5.2.2):
     resolution: {integrity: sha512-EkErPiDzHAc0k2MF5m6vBNmRUh338h2myhinUw/xaqsLs7/ZvsgREiLGj03VrSzbY/TB5ZXgBOsKraFee5yceA==}

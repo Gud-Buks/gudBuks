@@ -1,3 +1,4 @@
 {
-  "/comments?bookId=:id": "/comments?bookId=$1&_expand=user"
+  "/comments?bookId=:id": "/comments?bookId=$1&_expand=user&_sort=createdAt&_order=desc",
+  "/comments/:id": "/comments/$1?_expand=user"
 }

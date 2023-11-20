@@ -7,6 +7,7 @@
 
 	export let id: string;
 	const comments = getComments();
+	let userComments: Comment[] = [];
 
 	async function getBook() {
 		const res = await api.get<Book>('/books/' + id);
@@ -48,10 +49,13 @@
 					</section>
 					<section class="gap-4">
 						<h2>Comments</h2>
-						<CommentForm bookId={book.id} />
 						{#await comments}
 							<div>Loading...</div>
 						{:then comments}
+							<CommentForm bookId={book.id} bind:comments={userComments} />
+							{#if userComments.length}
+								<CommentList comments={userComments} />
+							{/if}
 							<CommentList {comments} />
 						{/await}
 					</section>
