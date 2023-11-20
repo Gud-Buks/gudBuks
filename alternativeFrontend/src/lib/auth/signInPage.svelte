@@ -21,7 +21,10 @@
 
 <div class="flex-1 items-center justify-center">
 	<div class="gap-6 max-w-xl w-full items-center">
-		<h1 class="text-2xl font-medium">Entrar</h1>
+		<div class="flex-row items-center gap-2">
+			<img src="/icon.svg" alt="logo" width="40" height="40" />
+			<h1 class="text-2xl font-medium">Gudbuks</h1>
+		</div>
 		<div id="buttonDiv"></div>
 		<div class="block text-xs">
 			By entering you agree with the
