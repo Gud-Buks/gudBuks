@@ -19,19 +19,20 @@
 	});
 </script>
 
-<div class="flex-1 items-center justify-center">
+<div class="flex-1 items-center justify-between">
+	<div />
 	<div class="gap-6 max-w-xl w-full items-center">
 		<div class="flex-row items-center gap-2">
 			<img src="/icon.svg" alt="logo" width="40" height="40" />
 			<h1 class="text-2xl font-medium">Gudbuks</h1>
 		</div>
-		<div id="buttonDiv"></div>
-		<div class="block text-xs">
-			By entering you agree with the
-			<a href="/use-terms">Use Terms</a>
-			and
-			<a href="/privacy-policy">Privacy Policy</a>
-		</div>
+		<div id="buttonDiv" class="h-10 min-w-[20rem]"></div>
+	</div>
+	<div class="block text-xs">
+		By entering you agree with the
+		<a href="/use-terms">Use Terms</a>
+		and
+		<a href="/privacy-policy">Privacy Policy</a>
 	</div>
 </div>
 
