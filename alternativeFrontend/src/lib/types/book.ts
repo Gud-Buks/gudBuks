@@ -1,7 +1,8 @@
 export type Book = {
 	id: string;
+	cover: string;
 	title: string;
 	author: string;
 	synopsis: string;
-	publishing_date: string;
+	releaseDate: string;
 };

@@ -27,13 +27,23 @@
 			<h1 class="text-2xl font-semibold text-center">{book.title}</h1>
 			<div class="md:flex-row gap-4">
 				<div class="items-center">
-					<img src="" alt="book cover" class="w-64 h-96 bg-black/10 shrink-0 md:sticky top-4" />
+					<img
+						src={book.cover}
+						alt="'{book.title}' cover"
+						class="w-64 h-96 bg-black/10 shrink-0 md:sticky top-4"
+					/>
 				</div>
 				<div class="gap-4 flex-1">
 					<section>
 						<h2>Synopsis</h2>
 						<div>
 							{book.synopsis}
+						</div>
+					</section>
+					<section>
+						<h2>Release date</h2>
+						<div>
+							{new Date(book.releaseDate).toLocaleDateString()}
 						</div>
 					</section>
 					<section class="gap-4">

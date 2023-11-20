@@ -4,70 +4,80 @@
       "title": "1984",
       "id": "1984",
       "author": "George Orwell",
-      "publishing_date": "1949-06-08",
+      "releaseDate": "1949-06-08",
+      "cover": "https://picsum.photos/id/10/200/300",
       "synopsis": "A dystopian novel that examines the dangers of totalitarianism and the loss of individual freedom."
     },
     {
       "title": "To Kill a Mockingbird",
       "id": "to-kill-a-mockingbird",
       "author": "Harper Lee",
-      "publishing_date": "1960-07-11",
+      "releaseDate": "1960-07-11",
+      "cover": "https://picsum.photos/id/20/200/300",
       "synopsis": "A classic novel that explores racial injustice and moral growth in the American South during the 1930s."
     },
     {
       "title": "The Great Gatsby",
       "id": "the-great-gatsby",
       "author": "F. Scott Fitzgerald",
-      "publishing_date": "1925-04-10",
+      "releaseDate": "1925-04-10",
+      "cover": "https://picsum.photos/id/30/200/300",
       "synopsis": "A tale of wealth, love, and the American Dream set in the Roaring Twenties."
     },
     {
       "title": "To the Lighthouse",
       "id": "to-the-lighthouse",
       "author": "Virginia Woolf",
-      "publishing_date": "1927-05-05",
+      "releaseDate": "1927-05-05",
+      "cover": "https://picsum.photos/id/40/200/300",
       "synopsis": "An experimental novel that explores the complex relationships within a family."
     },
     {
       "title": "The Hitchhiker's Guide to the Galaxy",
       "id": "the-hitchhikers-guide-to-the-galaxy",
       "author": "Douglas Adams",
-      "publishing_date": "1979-10-12",
+      "releaseDate": "1979-10-12",
+      "cover": "https://picsum.photos/id/50/200/300",
       "synopsis": "A comedic science fiction series that follows the adventures of an unwitting human and his alien friend."
     },
     {
       "title": "Pride and Prejudice",
       "id": "pride-and-prejudice",
       "author": "Jane Austen",
-      "publishing_date": "1813-01-28",
+      "releaseDate": "1813-01-28",
+      "cover": "https://picsum.photos/id/60/200/300",
       "synopsis": "A classic romance novel that explores societal expectations and the complexities of love."
     },
     {
       "title": "The Catcher in the Rye",
       "id": "the-catcher-in-the-rye",
       "author": "J.D. Salinger",
-      "publishing_date": "1951-07-16",
+      "releaseDate": "1951-07-16",
+      "cover": "https://picsum.photos/id/70/200/300",
       "synopsis": "A coming-of-age novel that follows the adventures of a disenchanted teenager in New York City."
     },
     {
       "title": "One Hundred Years of Solitude",
       "id": "one-hundred-years-of-solitude",
       "author": "Gabriel Garcia Marquez",
-      "publishing_date": "1967-05-30",
+      "releaseDate": "1967-05-30",
+      "cover": "https://picsum.photos/id/80/200/300",
       "synopsis": "A magical realist novel that chronicles the Buendía family over several generations in the fictional town of Macondo."
     },
     {
       "title": "Brave New World",
       "id": "brave-new-world",
       "author": "Aldous Huxley",
-      "publishing_date": "1932-12-02",
+      "releaseDate": "1932-12-02",
+      "cover": "https://picsum.photos/id/90/200/300",
       "synopsis": "A dystopian novel that explores a future society where people are engineered for specific roles and controlled through pleasure."
     },
     {
       "title": "The Lord of the Rings",
       "id": "the-lord-of-the-rings",
       "author": "J.R.R. Tolkien",
-      "publishing_date": "1954-07-29",
+      "releaseDate": "1954-07-29",
+      "cover": "https://picsum.photos/id/100/200/300",
       "synopsis": "An epic fantasy trilogy that follows the quest to destroy a powerful ring and defeat the Dark Lord Sauron."
     }
   ],
