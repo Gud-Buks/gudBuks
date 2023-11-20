@@ -1,3 +1,3 @@
 {
-  "/comments?bookId=:id": "/comments?_expand=user&bookId=:id"
+  "/comments?bookId=:id": "/comments?bookId=$1&_expand=user"
 }

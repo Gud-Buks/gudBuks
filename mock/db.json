@@ -118,7 +118,6 @@
       "createdAt": "2023-11-12T09:30:00Z",
       "text": "Thought I knew what 'Big Brother' meant, but this book took it to a whole new level. A disturbingly plausible nightmare of a future society."
     },
-
     {
       "id": "5",
       "userId": "jane-smith",
@@ -160,6 +159,20 @@
       "bookId": "the-great-gatsby",
       "createdAt": "2024-02-28T20:05:00Z",
       "text": "Fitzgerald's critique of the Jazz Age is sharp, and the characters are both alluring and repulsive. A commentary on the pursuit of an elusive and unattainable dream."
+    },
+    {
+      "bookId": "the-great-gatsby",
+      "text": "teste",
+      "createdAt": "2023-11-20T12:24:13.718Z",
+      "userId": "john-doe",
+      "id": "I9pHAtC"
+    },
+    {
+      "bookId": "the-great-gatsby",
+      "text": "algo",
+      "createdAt": "2023-11-20T12:24:47.706Z",
+      "userId": "john-doe",
+      "id": "m8pjlIC"
     }
   ]
 }
