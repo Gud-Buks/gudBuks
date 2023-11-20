@@ -1,0 +1,39 @@
+<script>
+	import { onMount } from 'svelte';
+
+	const clientId = import.meta.env.VITE_CLIENT_ID;
+
+	onMount(async () => {
+		const handleCredentialResponse = async (response) => {
+			console.log('Encoded JWT ID token: ' + response.credential);
+		};
+		google.accounts.id.initialize({
+			client_id: '764935952135-pq9vunhl6j03lams42b2rroh4babii7r.apps.googleusercontent.com',
+			callback: handleCredentialResponse
+		});
+		google.accounts.id.renderButton(
+			document.getElementById('buttonDiv'),
+			{ theme: 'outline', size: 'large' } // customization attributes
+		);
+		google.accounts.id.prompt();
+	});
+</script>
+
+<div class="flex-1 items-center justify-center">
+	<div class="gap-6 max-w-xl w-full items-center">
+		<h1 class="text-2xl font-medium">Entrar</h1>
+		<div id="buttonDiv"></div>
+		<div class="block text-xs">
+			By entering you agree with the
+			<a href="/use-terms">Use Terms</a>
+			and
+			<a href="/privacy-policy">Privacy Policy</a>
+		</div>
+	</div>
+</div>
+
+<style lang="postcss">
+	a {
+		@apply text-blue-500 underline;
+	}
+</style>
