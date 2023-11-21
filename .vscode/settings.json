@@ -4,5 +4,6 @@
     "source.organizeImports": true,
     "source.addMissingImports": true
   },
-  "material-icon-theme.activeIconPack": "nest"
+  "material-icon-theme.activeIconPack": "nest",
+  "cSpell.words": ["gudbucks"]
 }

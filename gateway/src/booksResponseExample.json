@@ -1,0 +1,764 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1156,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "L-ErEAAAQBAJ",
+      "etag": "6Q/SL+3ij0M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/L-ErEAAAQBAJ",
+      "volumeInfo": {
+        "title": "1984",
+        "subtitle": "Uma nova tradução do clássico de Orwell",
+        "authors": ["George Orwell"],
+        "publisher": "Editora Bibliomundi",
+        "publishedDate": "2023-05-22",
+        "description": "Com o seu 1984, George Orwell reinventou o romance de ficção científica. Quando menino, ele adorava os romances de H. G. Wells. Como Wells, ele se apoderou das tendências de seu próprio tempo, e tentou imaginar como elas poderiam se desenvolver no longo prazo. Seu romance está situado na Pista Um, um lugar outrora conhecido como Grã-Bretanha, mas então uma província do superestado da Oceania – preso em um conflito ideológico perpétuo com dois outros blocos: Eurásia e Lestásia. Como todos os grandes romances distópicos, o livro de Orwell era uma tentativa de alertar a sua própria sociedade para suas próprias tendências alarmantes. Por exemplo, ele podia ver que o que pode aterrorizar um país não é tanto a tortura pura e simples, ou restrições encobertas à liberdade de expressão, mas um 'adormecer' dos cidadãos, através de entretenimento sofisticado e informações vazias de significado – tudo embrulhado em uma referência constante à liberdade. Assim, em 1984, a sociedade está repleta de novas máquinas intrigantes: telas onipresentes que viciam e, ao mesmo tempo, vigiam constantemente seus cidadãos. As pessoas, no entanto, não sentem que são escravizadas. Como Orwell entendia tão bem, os regimes realmente inteligentes e assustadores do mundo moderno não são aqueles obviamente ditatoriais; eles são democráticos na aparência, e dão aos seus cidadãos a nítida sensação de estarem livres; mas, na realidade, os cegam com distrações constantes. Orwell teve a sabedoria de fazer a si mesmo notavelmente à prova do futuro. Ele estava cansado de abstrações econômicas e políticas, e começou seu trabalho perto da verdade da vida comum. Assim, ele escreveu com total clareza sobre duradouros e eternos temas da natureza humana. Ele é, quem sabe, o mais bem sucedido escritor de língua inglesa do século XX, e nos deu ferramentas para continuar a imaginar o que deve ser a escrita em nosso próprio tempo. O tradutor Rafael Arrais já teve suas traduções publicadas no mercado impresso, onde se destacam duas, pela Faro Editorial: A Revolução dos Bichos de George Orwell (ISBN: 6586041562) e O Pequeno Príncipe de Antoine de Saint-Exupéry (ISBN: 658604104X). Mas foi no mercado digital que ele conseguiu emplacar diversas traduções como o principal tradutor das Edições Textos para Reflexão. Além de tradutor, é poeta, editor e escritor de filosofia e literatura em geral. *** Número de páginas Equivalente a aproximadamente 360 págs. de um livro impresso (tamanho A5). Sumário (com índice ativo) - Parte 1 (Cap. 1 a 8) - Parte 2 (Cap. 1 a 10) - Parte 3 (Cap. 1 a 6) - Apêndice: Os Princípios da Novalíngua - Epílogo: A vida de George Orwell *** Por que vendemos ebooks tão baratinho? - Geralmente trabalhamos com autores em domínio público, de modo que não precisamos compartilhar direitos autorais. - Mesmo no caso dos livros de nossa autoria, ou naqueles em que trabalhamos na tradução, continua sendo de nosso interesse divulgar um conhecimento que acreditamos ser fundamental para a vida de qualquer caminhante ou buscador. - Finalmente, é o nosso hobby. [ uma edição Textos para Reflexão distribuída em parceria com a Bibliomundi - saiba mais em raph.com.br/tpr ]",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781526041685"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1526041685"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 390,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.58.55.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=L-ErEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=L-ErEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "pt-BR",
+        "previewLink": "http://books.google.com.br/books?id=L-ErEAAAQBAJ&printsec=frontcover&dq=1984&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=L-ErEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=L-ErEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 8.02,
+          "currencyCode": "BRL"
+        },
+        "retailPrice": {
+          "amount": 8.02,
+          "currencyCode": "BRL"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=L-ErEAAAQBAJ&rdid=book-L-ErEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 8020000,
+              "currencyCode": "BRL"
+            },
+            "retailPrice": {
+              "amountInMicros": 8020000,
+              "currencyCode": "BRL"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984-sample-epub.acsm?id=L-ErEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984-sample-pdf.acsm?id=L-ErEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=L-ErEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Com o seu 1984, George Orwell reinventou o romance de ficção científica."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "XxofEAAAQBAJ",
+      "etag": "XN1PIRU/dQE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/XxofEAAAQBAJ",
+      "volumeInfo": {
+        "title": "1984",
+        "authors": ["George Orwell"],
+        "publisher": "Tricaju",
+        "publishedDate": "2021-03-01",
+        "description": "Publicado em 1949, o texto de Orwell nasceu destinado à polêmica. Traduzido em mais de sessenta países, virou minissérie, filmes, quadrinhos, mangás e até uma ópera. Ganhou holofotes em 1999, quando uma produtora holandesa batizou seu reality show de Big Brother. 1984 foi responsável pela popularização de muitos termos e conceitos, como Grande Irmão, duplopensar, novidioma, buraco da memória e 2 2 5. O trabalho de Winston, o herói de 1984, é reescrever artigos de jornais do passado, de modo que o registro histórico sempre apoie a ideologia do Partido. Grande parte do Ministério também destrói os documentos que não foram revisados, dessa forma não há como provar que o governo esteja mentindo. Winston é um trabalhador diligente e habilidoso, mas odeia secretamente o Partido e sonha com a rebelião contra o Grande Irmão.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786589678168"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6589678162"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 309,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XxofEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XxofEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "pt-BR",
+        "previewLink": "http://books.google.com.br/books?id=XxofEAAAQBAJ&printsec=frontcover&dq=1984&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=XxofEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=XxofEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 4.46,
+          "currencyCode": "BRL"
+        },
+        "retailPrice": {
+          "amount": 4.46,
+          "currencyCode": "BRL"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=XxofEAAAQBAJ&rdid=book-XxofEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 4460000,
+              "currencyCode": "BRL"
+            },
+            "retailPrice": {
+              "amountInMicros": 4460000,
+              "currencyCode": "BRL"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984-sample-epub.acsm?id=XxofEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984-sample-pdf.acsm?id=XxofEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=XxofEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Ganhou holofotes em 1999, quando uma produtora holandesa batizou seu reality show de Big Brother. 1984 foi responsável pela popularização de muitos termos e conceitos, como Grande Irmão, duplopensar, novidioma, buraco da memória e 2 2 ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "JS6-DwAAQBAJ",
+      "etag": "yUOBOxXgEsU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/JS6-DwAAQBAJ",
+      "volumeInfo": {
+        "title": "1984 - Edição especial",
+        "authors": ["George Orwell"],
+        "publisher": "Companhia das Letras",
+        "publishedDate": "2019-12-06",
+        "description": "Uma das obras mais contundentes e influentes do século XX ganha nova e definitiva edição com projeto especial e ampla fortuna crítica. Romance incontornável, 1984 continua sendo o livro ao qual nos voltamos sempre que se mutila a verdade, distorce-se a linguagem e viola-se o poder. Nesta nova edição, a obra-prima de George Orwell ganha projeto gráfico especialíssimo ― com uma série de obras da artista brasileira Regina Silveira. O leitor conta também com apresentação do crítico Marcelo Pen e textos de gigantes como Golo Mann, Irving Howe, Raymond Williams, Thomas Pynchon, Homi K. Bhabha, Martha C. Nussbaum, Bernard Crick e George Packer ― ensaios que dão conta da história da recepção crítica do livro desde o ano de seu lançamento, 1949, até hoje, setenta anos depois. Com dezenas de milhões de cópias vendidas em todo o mundo, o romance de Orwell tem como herói o angustiado Winston Smith, refém de um mundo feito de opressão absoluta. Em Oceânia, ter uma mente livre é considerado crime gravíssimo. Numa trama em que os \"fatos alternativos\" estão por toda parte e a mentira foi institucionalizada, Winston se rebela contra a sociedade totalitária na qual vive; em seu anseio por verdade e liberdade, ele arrisca a vida ao se envolver amorosamente com uma colega de trabalho, Júlia, e com uma organização revolucionária secreta. Normalmente lido como uma distopia, 1984 é também uma sátira, uma profecia, um grito de alerta, um thriller de espionagem, uma extraordinária ficção científica, um terror psicológico, um romance pós-moderno e uma história de amor.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788554516123"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8554516125"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 655,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.7.5.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=JS6-DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=JS6-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "pt",
+        "previewLink": "http://books.google.com.br/books?id=JS6-DwAAQBAJ&printsec=frontcover&dq=1984&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=JS6-DwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=JS6-DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 44.9,
+          "currencyCode": "BRL"
+        },
+        "retailPrice": {
+          "amount": 44.9,
+          "currencyCode": "BRL"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=JS6-DwAAQBAJ&rdid=book-JS6-DwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 44900000,
+              "currencyCode": "BRL"
+            },
+            "retailPrice": {
+              "amountInMicros": 44900000,
+              "currencyCode": "BRL"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984_Edi%C3%A7%C3%A3o_especial-sample-epub.acsm?id=JS6-DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=JS6-DwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Nesta nova edição, a obra-prima de George Orwell ganha projeto gráfico especialíssimo ― com uma série de obras da artista brasileira Regina Silveira."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DyL8zwEACAAJ",
+      "etag": "85/fB+N5URQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DyL8zwEACAAJ",
+      "volumeInfo": {
+        "title": "1984 - Edição especial",
+        "authors": ["George Orwell"],
+        "publishedDate": "2019-12-06",
+        "description": "Uma das obras mais contundentes e influentes do século XX ganha nova e definitiva edição com projeto especial e ampla fortuna crítica. Romance incontornável, 1984 continua sendo o livro ao qual nos voltamos sempre que se mutila a verdade, distorce-se a linguagem e viola-se o poder. Nesta nova edição, a obra-prima de George Orwell ganha projeto gráfico especialíssimo — com capa em tecido, corte impresso e uma série de obras da artista brasileira Regina Silveira. O leitor conta também com apresentação do crítico Marcelo Pen e textos de gigantes como Golo Mann, Irving Howe, Raymond Williams, Thomas Pynchon, Homi K. Bhabha, Martha C. Nussbaum, Bernard Crick e George Packer — ensaios que dão conta da história da recepção crítica do livro desde o ano de seu lançamento, 1949, até hoje, setenta anos depois. Com dezenas de milhões de cópias vendidas em todo o mundo, o romance de Orwell tem como herói o angustiado Winston Smith, refém de um mundo feito de opressão absoluta. Em Oceânia, ter uma mente livre é considerado crime gravíssimo. Numa trama em que os “fatos alternativos” estão por toda parte e a mentira foi institucionalizada, Winston se rebela contra a sociedade totalitária na qual vive; em seu anseio por verdade e liberdade, ele arrisca a vida ao se envolver amorosamente com uma colega de trabalho, Júlia, e com uma organização revolucionária secreta. Normalmente lido como uma distopia, 1984 é também uma sátira, uma profecia, um grito de alerta, um thriller de espionagem, uma extraordinária ficção científica, um terror psicológico, um romance pós-moderno e uma história de amor.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8535932968"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788535932966"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "pt-BR",
+        "previewLink": "http://books.google.com.br/books?id=DyL8zwEACAAJ&dq=1984&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.br/books?id=DyL8zwEACAAJ&dq=1984&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/1984_Edi%C3%A7%C3%A3o_especial.html?hl=&id=DyL8zwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DyL8zwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Nesta nova edição, a obra-prima de George Orwell ganha projeto gráfico especialíssimo ― com uma série de obras da artista brasileira Regina Silveira."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BQOqDgAAQBAJ",
+      "etag": "Qkyjs44BIxQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BQOqDgAAQBAJ",
+      "volumeInfo": {
+        "title": "1984",
+        "subtitle": "a distopia do indivíduo sob controle",
+        "authors": ["Evanir Pavloski"],
+        "publisher": "SciELO - Editora UEPG",
+        "publishedDate": "2014-01-01",
+        "description": "Ao longo dos séculos, a ânsia por reestruturar os núcleos sociais tangenciou, muitas vezes, os limites do sonho e do pesadelo. A literatura, ao mesmo tempo testemunha e agente dessas inspirações, figurou espaços utópicos que, de forma ambígua, se revelavam transformadores e normalizadores. Dentre essas produções, destaca-se o romance anitutópico ou distópico 1984, de George Orwell, que desnuda os perigos que cercam o idealismo homogeneizador das utopias políticas. Tendo o universo ficcional do \"Big Brother\" como objeto de análise, a obra discute a recorrência histórica do utopismo no pensamento humano em geral e na literatura orwelliana em particular. Por meio dessa discussão, busca-se lançar luz sobre os eventos e os processos socioculturais que fomentaram o \"medo da utopia\" na modernidade tardia.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788577982189"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8577982181"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 268,
+        "printType": "BOOK",
+        "categories": ["Literary Criticism"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BQOqDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BQOqDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "pt",
+        "previewLink": "http://books.google.com.br/books?id=BQOqDgAAQBAJ&printsec=frontcover&dq=1984&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.br/books?id=BQOqDgAAQBAJ&dq=1984&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/1984.html?hl=&id=BQOqDgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984-sample-epub.acsm?id=BQOqDgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984-sample-pdf.acsm?id=BQOqDgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BQOqDgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Dentre essas produções, destaca-se o romance anitutópico ou distópico 1984, de George Orwell, que desnuda os perigos que cercam o idealismo homogeneizador das utopias políticas."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "i00fEAAAQBAJ",
+      "etag": "cEkyOdJ0ANc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/i00fEAAAQBAJ",
+      "volumeInfo": {
+        "title": "1984",
+        "authors": ["George Orwell"],
+        "publisher": "Nova Fronteira",
+        "publishedDate": "2021-02-19",
+        "description": "Winston Smith é um funcionário do Ministério da Verdade, órgão responsável por notícias, entretenimento, educação e belas-artes do Estado. Seu trabalho consiste em reescrever a história para satisfazer as demandas do Partido, que busca o poder em benefício próprio e persegue todos os que se atrevem a cometer os chamados \"pensamentos-crime\". Um dia, porém, cansado daquela realidade, ele decide desafiar o sistema, mas o Grande Irmão está sempre de olho em tudo e em todos... Romance surpreendente, \"1984\" cria um mundo imaginário assustadoramente verossímil do início ao fim. Nesta distopia, uma das mais celebradas e influentes da literatura mundial, George Orwell nos apresenta presságios que podem estar mais perto da realidade de hoje do que gostaríamos. Esta edição conta com a tradução de Adalgisa Campos da Silva e o prefácio do advogado e escritor José Roberto de Castro Neves.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786556402123"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6556402125"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 336,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=i00fEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=i00fEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "pt",
+        "previewLink": "http://books.google.com.br/books?id=i00fEAAAQBAJ&printsec=frontcover&dq=1984&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=i00fEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=i00fEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 29.99,
+          "currencyCode": "BRL"
+        },
+        "retailPrice": {
+          "amount": 29.99,
+          "currencyCode": "BRL"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=i00fEAAAQBAJ&rdid=book-i00fEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 29990000,
+              "currencyCode": "BRL"
+            },
+            "retailPrice": {
+              "amountInMicros": 29990000,
+              "currencyCode": "BRL"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984-sample-epub.acsm?id=i00fEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=i00fEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Um dia, porém, cansado daquela realidade, ele decide desafiar o sistema, mas o Grande Irmão está sempre de olho em tudo e em todos... Romance surpreendente, &quot;1984&quot; cria um mundo imaginário assustadoramente verossímil do início ao fim."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Ih4DAAAAMBAJ",
+      "etag": "oF8r89Qdinw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Ih4DAAAAMBAJ",
+      "volumeInfo": {
+        "title": "Cincinnati Magazine",
+        "publishedDate": "1982-05",
+        "description": "Cincinnati Magazine taps into the DNA of the city, exploring shopping, dining, living, and culture and giving readers a ringside seat on the issues shaping the region.",
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 120,
+        "printType": "MAGAZINE",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Ih4DAAAAMBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Ih4DAAAAMBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.br/books?id=Ih4DAAAAMBAJ&printsec=frontcover&dq=1984&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com.br/books?id=Ih4DAAAAMBAJ&dq=1984&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Cincinnati_Magazine.html?hl=&id=Ih4DAAAAMBAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Ih4DAAAAMBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Cincinnati Magazine taps into the DNA of the city, exploring shopping, dining, living, and culture and giving readers a ringside seat on the issues shaping the region."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "05wAGZQlo9QC",
+      "etag": "aeT8aRAtZ/w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/05wAGZQlo9QC",
+      "volumeInfo": {
+        "title": "PC Mag",
+        "publishedDate": "1983-12",
+        "description": "PCMag.com is a leading authority on technology, delivering Labs-based, independent reviews of the latest products and services. Our expert industry analysis and practical solutions help you make better buying decisions and get more from technology.",
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 788,
+        "printType": "MAGAZINE",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=05wAGZQlo9QC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=05wAGZQlo9QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.br/books?id=05wAGZQlo9QC&printsec=frontcover&dq=1984&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.br/books?id=05wAGZQlo9QC&dq=1984&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/PC_Mag.html?hl=&id=05wAGZQlo9QC"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=05wAGZQlo9QC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "PCMag.com is a leading authority on technology, delivering Labs-based, independent reviews of the latest products and services."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uCZUswEACAAJ",
+      "etag": "ZfubcNuTR40",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uCZUswEACAAJ",
+      "volumeInfo": {
+        "title": "1984",
+        "authors": ["Eric Arthur Blair, Eric Arthur"],
+        "publisher": "Createspace Independent Publishing Platform",
+        "publishedDate": "2018-01-17",
+        "description": "Nineteen Eighty-Four, often published as 1984, is a dystopian novel by English author George Orwell published in 1949. The novel is set in Airstrip One (formerly known as Great Britain), a province of the superstate Oceania in a world of perpetual war, omnipresent government surveillance and public manipulation, dictated by a political system euphemistically named English Socialism (or Ingsoc in the government's invented language, Newspeak) under the control of a privileged elite of the Inner Party, that persecutes individualism and independent thinking as \"thoughtcrime",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "198373263X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781983732638"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 450,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uCZUswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uCZUswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.br/books?id=uCZUswEACAAJ&dq=1984&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.br/books?id=uCZUswEACAAJ&dq=1984&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/1984.html?hl=&id=uCZUswEACAAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=uCZUswEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The novel is set in Airstrip One (formerly known as Great Britain), a province of the superstate Oceania in a world of perpetual war, omnipresent government surveillance and public manipulation, dictated by a political system ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "XsqoEAAAQBAJ",
+      "etag": "hzT390lcLIE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/XsqoEAAAQBAJ",
+      "volumeInfo": {
+        "title": "1984",
+        "subtitle": "Nineteen Eighty-Four",
+        "authors": ["George Orwell"],
+        "publisher": "BoD – Books on Demand",
+        "publishedDate": "2023-01-18",
+        "description": "The world is divided into the three hostile power blocs of Oceania, Eurasia and East Asia, which are at permanent war with each other. The action of the novel takes place in Oceania, which includes North and South America, the British Isles, Australia and southern Africa. In the dictatorial and totalitarian state, a party elite (Inner Party) led by Big Brother - who is never really visible - oppresses the remaining party members (Outer Party) and the broad mass of the people, the \"proles.\" The omnipresent thought police permanently monitor all party members. The English language is being cleansed of \"harmful terms\" and has been replaced by a new language - Newspeak. Gröls Classics - English Edition",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783988288226"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3988288225"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 274,
+        "printType": "BOOK",
+        "categories": ["Drama"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XsqoEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XsqoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.br/books?id=XsqoEAAAQBAJ&printsec=frontcover&dq=1984&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.br/books?id=XsqoEAAAQBAJ&dq=1984&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/1984.html?hl=&id=XsqoEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "BR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.br/books/download/1984-sample-pdf.acsm?id=XsqoEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=XsqoEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The action of the novel takes place in Oceania, which includes North and South America, the British Isles, Australia and southern Africa."
+      }
+    }
+  ]
+}

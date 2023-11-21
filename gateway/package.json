@@ -1,5 +1,5 @@
 {
-  "name": "gudbucks-backend",
+  "name": "gudbucks-gateway",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,10 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "5.6.0",
+    "@googleapis/books": "1.0.0",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
-    "prisma": "^5.6.0",
     "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
