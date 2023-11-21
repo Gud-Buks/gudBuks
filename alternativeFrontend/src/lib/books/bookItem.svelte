@@ -10,7 +10,7 @@
 		width="112"
 		height="161.8"
 		src={book.cover}
-		alt="'{book.title}' cover"
+		alt={book.title}
 		class="bg-black/10 rounded"
 	/>
 	<div>

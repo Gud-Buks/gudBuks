@@ -36,11 +36,7 @@
 		class="bg-black/10 p-2 rounded"
 	/>
 	<div class="flex-row">
-		<button
-			type="submit"
-			disabled={loading}
-			class="bg-blue-600 hover:bg-blue-500 disabled:saturate-50 text-white rounded p-2 gap-2 group items-center justify-center"
-		>
+		<button type="submit" disabled={loading} class="main-button">
 			{#if loading}
 				<Moon color={'white'} size={20} />
 			{/if}

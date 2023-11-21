@@ -13,6 +13,15 @@ button {
 	@apply flex flex-row items-center justify-center;
 }
 
+@layer components {
+	.main-button {
+		@apply bg-blue-600 hover:bg-blue-500 disabled:saturate-50 text-white rounded p-2 gap-2 items-center justify-center;
+	}
+	.main-button:active * {
+		@apply scale-90;
+	}
+}
+
 body {
 	min-height: 100dvh;
 }

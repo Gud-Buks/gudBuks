@@ -30,7 +30,7 @@
 				<div class="items-center">
 					<img
 						src={book.cover}
-						alt="'{book.title}' cover"
+						alt={book.title}
 						class="w-64 h-96 bg-black/10 shrink-0 md:sticky top-4"
 					/>
 				</div>
