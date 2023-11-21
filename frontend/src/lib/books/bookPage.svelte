@@ -10,8 +10,6 @@
 	TimeAgo.addDefaultLocale(en);
 	TimeAgo.addLocale(pt);
 
-	export let id: string;
-
 	export let book: Book;
 	export let comments: Comment[];
 
