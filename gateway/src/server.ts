@@ -18,11 +18,11 @@ app.use("/books", async (req, res) => {
     console.log(data.volumeInfo.imageLinks);
     return {
       id: data.id,
-      author: data.volumeInfo.authors,
-      cover: data.volumeInfo.imageLinks?.thumbnail,
-      releaseDate: data.volumeInfo.publishedDate,
-      synopsis: data.volumeInfo.description,
       title: data.volumeInfo.title,
+      authors: data.volumeInfo.authors,
+      description: data.volumeInfo.description,
+      cover: data.volumeInfo.imageLinks?.thumbnail,
+      publishedDate: data.volumeInfo.publishedDate,
     };
   });
   console.log(books);

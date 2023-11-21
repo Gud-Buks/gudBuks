@@ -36,15 +36,15 @@
 				</div>
 				<div class="gap-4 flex-1">
 					<section>
-						<h2>Synopsis</h2>
+						<h2>description</h2>
 						<div>
-							{book.synopsis}
+							{book.description}
 						</div>
 					</section>
 					<section>
 						<h2>Release date</h2>
 						<div>
-							{new Date(book.releaseDate).toLocaleDateString()}
+							{new Date(book.publishedDate).toLocaleDateString()}
 						</div>
 					</section>
 					<section class="gap-4">
