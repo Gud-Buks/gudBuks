@@ -15,7 +15,6 @@ app.use("/books", async (req, res) => {
   );
   const booksData: BooksVolumes = await booksRes.json();
   const books: Book[] = booksData.items.map((data) => {
-    console.log(data.volumeInfo.imageLinks);
     return {
       id: data.id,
       title: data.volumeInfo.title,
@@ -25,12 +24,11 @@ app.use("/books", async (req, res) => {
       publishedDate: data.volumeInfo.publishedDate,
     };
   });
-  console.log(books);
   return res.json(books);
 });
 
 app.use(errorMiddleware);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.info(`Example app listening on port ${port}`);
 });
