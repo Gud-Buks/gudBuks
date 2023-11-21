@@ -3,8 +3,6 @@
 	import CommentItem from './commentItem.svelte';
 
 	export let comments: Comment[];
-
-	console.log(comments);
 </script>
 
 {#if comments.length === 0}

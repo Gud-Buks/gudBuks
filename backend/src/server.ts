@@ -11,5 +11,5 @@ app.use("/comments", commentRouter);
 app.use(errorMiddleware);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.info(`Example app listening on port ${port}`);
 });

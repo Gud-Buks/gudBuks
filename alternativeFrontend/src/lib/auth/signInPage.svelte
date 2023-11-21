@@ -5,7 +5,7 @@
 
 	onMount(async () => {
 		const handleCredentialResponse = async (response) => {
-			console.log('Encoded JWT ID token: ' + response.credential);
+			// use response.credential
 		};
 		google.accounts.id.initialize({
 			client_id: '764935952135-pq9vunhl6j03lams42b2rroh4babii7r.apps.googleusercontent.com',
