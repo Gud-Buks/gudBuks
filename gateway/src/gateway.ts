@@ -1,3 +1,4 @@
+import cors from "cors";
 import express from "express";
 import "express-async-errors";
 import { Book } from "./book";
@@ -6,6 +7,8 @@ import { errorMiddleware } from "./errorMiddleware";
 
 const app = express();
 const port = 8585;
+
+app.use(cors());
 
 app.use("/books", async (req, res) => {
   const q = req.query.q as string;
