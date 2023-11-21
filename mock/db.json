@@ -4,71 +4,81 @@
       "title": "1984",
       "id": "1984",
       "author": "George Orwell",
-      "publishing_date": "1949-06-08",
-      "synopsis": "A dystopian novel that examines the dangers of totalitarianism and the loss of individual freedom."
+      "publishedDate": "1949-06-08",
+      "cover": "https://picsum.photos/id/10/200/300",
+      "description": "A dystopian novel that examines the dangers of totalitarianism and the loss of individual freedom."
     },
     {
       "title": "To Kill a Mockingbird",
       "id": "to-kill-a-mockingbird",
       "author": "Harper Lee",
-      "publishing_date": "1960-07-11",
-      "synopsis": "A classic novel that explores racial injustice and moral growth in the American South during the 1930s."
+      "publishedDate": "1960-07-11",
+      "cover": "https://picsum.photos/id/20/200/300",
+      "description": "A classic novel that explores racial injustice and moral growth in the American South during the 1930s."
     },
     {
       "title": "The Great Gatsby",
       "id": "the-great-gatsby",
       "author": "F. Scott Fitzgerald",
-      "publishing_date": "1925-04-10",
-      "synopsis": "A tale of wealth, love, and the American Dream set in the Roaring Twenties."
+      "publishedDate": "1925-04-10",
+      "cover": "https://picsum.photos/id/30/200/300",
+      "description": "A tale of wealth, love, and the American Dream set in the Roaring Twenties."
     },
     {
       "title": "To the Lighthouse",
       "id": "to-the-lighthouse",
       "author": "Virginia Woolf",
-      "publishing_date": "1927-05-05",
-      "synopsis": "An experimental novel that explores the complex relationships within a family."
+      "publishedDate": "1927-05-05",
+      "cover": "https://picsum.photos/id/40/200/300",
+      "description": "An experimental novel that explores the complex relationships within a family."
     },
     {
       "title": "The Hitchhiker's Guide to the Galaxy",
       "id": "the-hitchhikers-guide-to-the-galaxy",
       "author": "Douglas Adams",
-      "publishing_date": "1979-10-12",
-      "synopsis": "A comedic science fiction series that follows the adventures of an unwitting human and his alien friend."
+      "publishedDate": "1979-10-12",
+      "cover": "https://picsum.photos/id/50/200/300",
+      "description": "A comedic science fiction series that follows the adventures of an unwitting human and his alien friend."
     },
     {
       "title": "Pride and Prejudice",
       "id": "pride-and-prejudice",
       "author": "Jane Austen",
-      "publishing_date": "1813-01-28",
-      "synopsis": "A classic romance novel that explores societal expectations and the complexities of love."
+      "publishedDate": "1813-01-28",
+      "cover": "https://picsum.photos/id/60/200/300",
+      "description": "A classic romance novel that explores societal expectations and the complexities of love."
     },
     {
       "title": "The Catcher in the Rye",
       "id": "the-catcher-in-the-rye",
       "author": "J.D. Salinger",
-      "publishing_date": "1951-07-16",
-      "synopsis": "A coming-of-age novel that follows the adventures of a disenchanted teenager in New York City."
+      "publishedDate": "1951-07-16",
+      "cover": "https://picsum.photos/id/70/200/300",
+      "description": "A coming-of-age novel that follows the adventures of a disenchanted teenager in New York City."
     },
     {
       "title": "One Hundred Years of Solitude",
       "id": "one-hundred-years-of-solitude",
       "author": "Gabriel Garcia Marquez",
-      "publishing_date": "1967-05-30",
-      "synopsis": "A magical realist novel that chronicles the Buendía family over several generations in the fictional town of Macondo."
+      "publishedDate": "1967-05-30",
+      "cover": "https://picsum.photos/id/80/200/300",
+      "description": "A magical realist novel that chronicles the Buendía family over several generations in the fictional town of Macondo."
     },
     {
       "title": "Brave New World",
       "id": "brave-new-world",
       "author": "Aldous Huxley",
-      "publishing_date": "1932-12-02",
-      "synopsis": "A dystopian novel that explores a future society where people are engineered for specific roles and controlled through pleasure."
+      "publishedDate": "1932-12-02",
+      "cover": "https://picsum.photos/id/90/200/300",
+      "description": "A dystopian novel that explores a future society where people are engineered for specific roles and controlled through pleasure."
     },
     {
       "title": "The Lord of the Rings",
       "id": "the-lord-of-the-rings",
       "author": "J.R.R. Tolkien",
-      "publishing_date": "1954-07-29",
-      "synopsis": "An epic fantasy trilogy that follows the quest to destroy a powerful ring and defeat the Dark Lord Sauron."
+      "publishedDate": "1954-07-29",
+      "cover": "https://picsum.photos/id/100/200/300",
+      "description": "An epic fantasy trilogy that follows the quest to destroy a powerful ring and defeat the Dark Lord Sauron."
     }
   ],
   "users": [
@@ -94,62 +104,294 @@
       "id": "1",
       "userId": "john-doe",
       "bookId": "1984",
+      "createdAt": "2023-01-15T08:45:00Z",
       "text": "A chilling masterpiece that makes you question the very nature of reality. Orwell's dystopian vision is both haunting and thought-provoking."
     },
     {
       "id": "2",
       "userId": "jane-smith",
       "bookId": "1984",
+      "createdAt": "2023-04-22T14:20:00Z",
       "text": "The portrayal of a totalitarian regime is eerily relevant even today. A must-read for those interested in political philosophy and social commentary."
     },
     {
       "id": "3",
       "userId": "bob-johnson",
       "bookId": "1984",
+      "createdAt": "2023-08-07T18:10:00Z",
       "text": "Orwell's writing is razor-sharp, and the oppressive atmosphere he creates is truly unsettling. A cautionary tale that lingers in your mind."
     },
     {
       "id": "4",
       "userId": "alice-williams",
       "bookId": "1984",
+      "createdAt": "2023-11-12T09:30:00Z",
       "text": "Thought I knew what 'Big Brother' meant, but this book took it to a whole new level. A disturbingly plausible nightmare of a future society."
     },
-
     {
       "id": "5",
       "userId": "jane-smith",
       "bookId": "to-kill-a-mockingbird",
+      "createdAt": "2024-02-28T20:05:00Z",
       "text": "A timeless classic that tackles issues of racism and injustice with grace and compassion. Scout's innocence provides a unique perspective on a harsh reality."
     },
     {
       "id": "6",
       "userId": "alice-williams",
       "bookId": "to-kill-a-mockingbird",
+      "createdAt": "2023-01-15T08:45:00Z",
       "text": "Harper Lee's storytelling is beautiful, and the characters feel like old friends. A poignant exploration of morality and the complexities of human nature."
     },
     {
       "id": "7",
       "userId": "bob-johnson",
       "bookId": "to-kill-a-mockingbird",
+      "createdAt": "2023-04-22T14:20:00Z",
       "text": "Atticus Finch is the moral compass we all need. The courtroom drama is riveting, but it's the subtle lessons about empathy that make this a true gem."
     },
     {
       "id": "8",
       "userId": "john-doe",
       "bookId": "the-great-gatsby",
+      "createdAt": "2023-08-07T18:10:00Z",
       "text": "A glamorous and tragic portrayal of the American Dream. Fitzgerald's prose is both poetic and devastating, capturing the excesses of the Roaring Twenties."
     },
     {
       "id": "9",
       "userId": "alice-williams",
       "bookId": "the-great-gatsby",
+      "createdAt": "2023-11-12T09:30:00Z",
       "text": "Gatsby's unrequited love and the symbolism of the green light stay with you long after the last page. A poignant exploration of the hollowness of materialism."
     },
     {
       "id": "10",
       "userId": "jane-smith",
       "bookId": "the-great-gatsby",
+      "createdAt": "2024-02-28T20:05:00Z",
       "text": "Fitzgerald's critique of the Jazz Age is sharp, and the characters are both alluring and repulsive. A commentary on the pursuit of an elusive and unattainable dream."
+    },
+    {
+      "bookId": "the-great-gatsby",
+      "text": "teste",
+      "createdAt": "2023-11-20T12:24:13.718Z",
+      "userId": "john-doe",
+      "id": "I9pHAtC"
+    },
+    {
+      "bookId": "the-great-gatsby",
+      "text": "algo",
+      "createdAt": "2023-11-20T12:24:47.706Z",
+      "userId": "john-doe",
+      "id": "m8pjlIC"
+    },
+    {
+      "bookId": "to-kill-a-mockingbird",
+      "text": "teste",
+      "createdAt": "2023-11-20T12:39:30.609Z",
+      "userId": "john-doe",
+      "id": "FvVYH-_"
+    },
+    {
+      "bookId": "1984",
+      "createdAt": "2023-11-20T12:49:46.009Z",
+      "userId": "john-doe",
+      "id": "AnluDbK"
+    },
+    {
+      "bookId": "1984",
+      "text": "teste",
+      "createdAt": "2023-11-20T12:49:54.482Z",
+      "userId": "john-doe",
+      "id": "tnhry1b"
+    },
+    {
+      "bookId": "1984",
+      "text": "oie",
+      "createdAt": "2023-11-20T12:50:11.368Z",
+      "userId": "john-doe",
+      "id": "vkH5tFm"
+    },
+    {
+      "bookId": "1984",
+      "text": "algoo",
+      "createdAt": "2023-11-20T12:54:53.628Z",
+      "userId": "john-doe",
+      "id": "GrGF_fZ"
+    },
+    {
+      "bookId": "1984",
+      "text": "teste",
+      "createdAt": "2023-11-20T12:58:51.239Z",
+      "userId": "john-doe",
+      "id": "47a74Va"
+    },
+    {
+      "bookId": "1984",
+      "text": "algo",
+      "createdAt": "2023-11-20T12:58:57.875Z",
+      "userId": "john-doe",
+      "id": "wrmswL5"
+    },
+    {
+      "bookId": "1984",
+      "text": "algo",
+      "createdAt": "2023-11-20T12:59:34.021Z",
+      "userId": "john-doe",
+      "id": "Yl9F09g"
+    },
+    {
+      "bookId": "1984",
+      "text": "teste",
+      "createdAt": "2023-11-20T12:59:36.726Z",
+      "userId": "john-doe",
+      "id": "GEri4Iy"
+    },
+    {
+      "bookId": "1984",
+      "text": "hello",
+      "createdAt": "2023-11-20T13:04:56.329Z",
+      "userId": "john-doe",
+      "id": "Tt1W1Ap"
+    },
+    {
+      "bookId": "1984",
+      "text": "teste",
+      "createdAt": "2023-11-20T13:04:58.748Z",
+      "userId": "john-doe",
+      "id": "kx6ToN4"
+    },
+    {
+      "bookId": "1984",
+      "text": "oi",
+      "createdAt": "2023-11-20T13:05:23.464Z",
+      "userId": "john-doe",
+      "id": "dlYOSMv"
+    },
+    {
+      "bookId": "1984",
+      "text": "oi",
+      "createdAt": "2023-11-20T13:05:58.666Z",
+      "userId": "john-doe",
+      "id": "MKVIgO5"
+    },
+    {
+      "bookId": "1984",
+      "text": "quale",
+      "createdAt": "2023-11-20T13:06:07.449Z",
+      "userId": "john-doe",
+      "id": "HObqUoV"
+    },
+    {
+      "bookId": "1984",
+      "text": "teste",
+      "createdAt": "2023-11-20T13:06:45.285Z",
+      "userId": "john-doe",
+      "id": "GvPA59h"
+    },
+    {
+      "bookId": "1984",
+      "text": "a\n",
+      "createdAt": "2023-11-20T13:07:52.922Z",
+      "userId": "john-doe",
+      "id": "cn2vzNz"
+    },
+    {
+      "bookId": "1984",
+      "text": "quale",
+      "createdAt": "2023-11-20T13:08:09.215Z",
+      "userId": "john-doe",
+      "id": "bmHWvWB"
+    },
+    {
+      "bookId": "1984",
+      "text": "a",
+      "createdAt": "2023-11-20T13:08:50.509Z",
+      "userId": "john-doe",
+      "id": "nfzejiS"
+    },
+    {
+      "bookId": "1984",
+      "text": "quale",
+      "createdAt": "2023-11-20T13:10:43.269Z",
+      "userId": "john-doe",
+      "id": "Nt5ek7L"
+    },
+    {
+      "bookId": "1984",
+      "text": "massa",
+      "createdAt": "2023-11-20T13:10:46.131Z",
+      "userId": "john-doe",
+      "id": "jj7UmuH"
+    },
+    {
+      "bookId": "1984",
+      "text": "oi",
+      "createdAt": "2023-11-20T13:13:41.940Z",
+      "userId": "john-doe",
+      "id": "ucN9Lhd"
+    },
+    {
+      "bookId": "1984",
+      "text": "teste",
+      "createdAt": "2023-11-20T13:13:45.120Z",
+      "userId": "john-doe",
+      "id": "yNqty_c"
+    },
+    {
+      "bookId": "1984",
+      "text": "quale",
+      "createdAt": "2023-11-20T13:13:49.847Z",
+      "userId": "john-doe",
+      "id": "LulIMAn"
+    },
+    {
+      "bookId": "1984",
+      "text": "massa",
+      "createdAt": "2023-11-20T13:14:03.718Z",
+      "userId": "john-doe",
+      "id": "XnnklzO"
+    },
+    {
+      "bookId": "1984",
+      "text": "teste",
+      "createdAt": "2023-11-20T13:14:06.327Z",
+      "userId": "john-doe",
+      "id": "LrZ6vEz"
+    },
+    {
+      "bookId": "the-hitchhikers-guide-to-the-galaxy",
+      "text": "teste",
+      "createdAt": "2023-11-20T13:23:04.309Z",
+      "userId": "john-doe",
+      "id": "H00HQvb"
+    },
+    {
+      "bookId": "the-hitchhikers-guide-to-the-galaxy",
+      "text": "coisa",
+      "createdAt": "2023-11-20T13:23:07.654Z",
+      "userId": "john-doe",
+      "id": "aAynsGb"
+    },
+    {
+      "bookId": "XxofEAAAQBAJ",
+      "text": "teste",
+      "createdAt": "2023-11-21T01:56:13.354Z",
+      "userId": "john-doe",
+      "id": "FyKLVAy"
+    },
+    {
+      "bookId": "XxofEAAAQBAJ",
+      "text": "massa",
+      "createdAt": "2023-11-21T01:56:16.999Z",
+      "userId": "john-doe",
+      "id": "txXivHy"
+    },
+    {
+      "bookId": "XxofEAAAQBAJ",
+      "text": "um comentário feito pelo usuário",
+      "createdAt": "2023-11-21T01:57:59.181Z",
+      "userId": "john-doe",
+      "id": "V7ks8uI"
     }
   ]
 }
