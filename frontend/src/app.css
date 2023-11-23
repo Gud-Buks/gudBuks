@@ -20,6 +20,9 @@ button {
 	.main-button:active * {
 		@apply scale-90;
 	}
+	.top-bar {
+		@apply flex-row items-center justify-between pr-2 pl-10 gap-2;
+	}
 }
 
 body {

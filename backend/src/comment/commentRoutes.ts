@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { Request as AuthRequest } from "express-jwt";
 import { createComment } from "./createComment";
 import { getComment } from "./getComment";
 import { getComments } from "./getComments";
+import { AuthRequest } from "../auth/authRequest";
 
 const router = Router();
 
@@ -19,7 +19,7 @@ router.get("/", async (req, res) => {
   return res.json(comments);
 });
 
-router.post("/", async (req: AuthRequest<string>, res) => {
+router.post("/", async (req: AuthRequest, res) => {
   const { bookId, text } = req.body;
   if (!bookId) res.status(400).send("Missing bookId on request body");
   if (!text) res.status(400).send("Missing text on request body");

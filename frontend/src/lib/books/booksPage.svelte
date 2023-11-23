@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { api } from '$lib/api';
 	import type { Book } from '$lib/types/book';
+	import MeLink from '$lib/user/meLink.svelte';
 	import BookItem from './bookItem.svelte';
+	import BookSearchForm from './bookSearchForm.svelte';
 	import LoadingSection from './loadingSection.svelte';
 
 	export let q: string | null;
@@ -14,22 +16,11 @@
 	}
 </script>
 
-<div class="items-center p-2 sticky top-0 bg-white">
-	<form method="get" class="flex-row">
-		<input
-			id="q"
-			name="q"
-			type="text"
-			bind:value={inputValue}
-			class="bg-black/10 rounded p-2"
-			placeholder="enter some title here"
-		/>
-		<button type="submit" class="main-button">
-			<div>Search</div>
-		</button>
-	</form>
+<div class="top-bar">
+	<div />
+	<BookSearchForm value={inputValue} />
+	<MeLink />
 </div>
-
 {#if !q}
 	<div class="p-2 text-center">The books options will be shown here once you search</div>
 {:else}

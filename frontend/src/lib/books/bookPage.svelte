@@ -2,6 +2,7 @@
 	import { api } from '$lib/api';
 	import type { Book } from '$lib/types/book';
 	import type { Comment } from '$lib/types/comment';
+	import MeLink from '$lib/user/meLink.svelte';
 	import CommentsSection from './commentsSection.svelte';
 	import GoBackLink from './goBackLink.svelte';
 	import LoadingSection from './loadingSection.svelte';
@@ -22,12 +23,13 @@
 {#await getBook()}
 	<LoadingSection />
 {:then book}
+	<div class="top-bar p-2 z-10 bg-white items-start">
+		<GoBackLink />
+		<h1 class="text-2xl font-semibold text-center flex-1">{book.title}</h1>
+		<MeLink />
+	</div>
 	<div class="flex-1 items-center">
 		<div class="p-6 gap-6 items-center flex-1 w-full max-w-5xl">
-			<div class="flex-row w-full">
-				<GoBackLink />
-				<h1 class="text-2xl font-semibold text-center flex-1">{book.title}</h1>
-			</div>
 			<div class="md:flex-row gap-4">
 				<div class="items-center">
 					<img
