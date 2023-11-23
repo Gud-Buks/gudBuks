@@ -6,6 +6,7 @@
 	import pt from 'javascript-time-ago/locale/pt';
 	import CommentForm from './comments/commentForm.svelte';
 	import CommentList from './comments/commentList.svelte';
+	import GoBackLink from './goBackLink.svelte';
 
 	TimeAgo.addDefaultLocale(en);
 	TimeAgo.addLocale(pt);
@@ -18,7 +19,10 @@
 
 <div class="flex-1 items-center">
 	<div class="p-6 gap-6 items-center flex-1 w-full max-w-5xl">
-		<h1 class="text-2xl font-semibold text-center">{book.title}</h1>
+		<div class="flex-row w-full">
+			<GoBackLink />
+			<h1 class="text-2xl font-semibold text-center flex-1">{book.title}</h1>
+		</div>
 		<div class="md:flex-row gap-4">
 			<div class="items-center">
 				<img
