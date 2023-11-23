@@ -7,7 +7,7 @@ import { errorMiddleware } from "./errorMiddleware";
 const app = express();
 const port = 3000;
 
-app.use("/comments", commentRouter);
+app.use("/api/v1/comments", commentRouter);
 app.use(errorMiddleware);
 
 app.listen(port, () => {
