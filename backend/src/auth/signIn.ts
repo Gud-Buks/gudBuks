@@ -1,10 +1,15 @@
 import { User } from "@prisma/client";
-import { OAuth2Client } from "google-auth-library";
+import jwt from "jsonwebtoken";
 import { db } from "../db";
+import { JWT_SECRET } from "../env";
 import { getPayload } from "./getPayload";
-const client = new OAuth2Client();
 
-export async function signIn(idToken: string): Promise<User> {
+type SignInResult = {
+  user: User;
+  token: string;
+};
+
+export async function signIn(idToken: string): Promise<SignInResult> {
   const { email, name } = await getPayload(idToken);
 
   let user = await db.user.findUnique({ where: { email } });
@@ -13,5 +18,7 @@ export async function signIn(idToken: string): Promise<User> {
     user = await db.user.create({ data: { email, name } });
   }
 
-  return user;
+  const token = jwt.sign(user.id, JWT_SECRET);
+
+  return { user, token };
 }
