@@ -10,12 +10,14 @@ type SignInResult = {
 };
 
 export async function signIn(idToken: string): Promise<SignInResult> {
-  const { email, name } = await getPayload(idToken);
+  const payload = await getPayload(idToken);
+  const { email } = payload;
 
   let user = await db.user.findUnique({ where: { email } });
 
   if (!user) {
-    user = await db.user.create({ data: { email, name } });
+    const { name, picture } = payload;
+    user = await db.user.create({ data: { email, name, picture } });
   }
 
   const token = jwt.sign(user.id, JWT_SECRET, { algorithm: "HS256" });
