@@ -6,6 +6,12 @@ const client = new OAuth2Client();
 
 export async function signIn(idToken: string): Promise<User> {
   const { email, name } = await getPayload(idToken);
-  const user = await db.user.create({ data: { email, name } });
+
+  let user = await db.user.findUnique({ where: { email } });
+
+  if (!user) {
+    user = await db.user.create({ data: { email, name } });
+  }
+
   return user;
 }
