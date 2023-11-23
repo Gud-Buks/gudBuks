@@ -10,12 +10,14 @@ A simple book comments app to the distributed systems class
 - Create a `.env` by copying `.env.example`
 - Run the database using `docker compose up -d`
 
-## Frontend
+## Gateway
+
+⚠️ **Without the gateway the frontend can't access the backend**
 
 - Install the dependencies using `npm i`
 - Run using `npm run dev`
 
-## Gateway
+## Frontend
 
 - Install the dependencies using `npm i`
 - Run using `npm run dev`
