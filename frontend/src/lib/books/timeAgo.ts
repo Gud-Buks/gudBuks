@@ -1,5 +1,4 @@
 export function timeAgo(fromDate: Date): string {
-	console.log(fromDate);
 	const timeDifference: number = Math.floor((new Date().getTime() - fromDate.getTime()) / 1000);
 	const rtf: Intl.RelativeTimeFormat = new Intl.RelativeTimeFormat(navigator.language, {
 		numeric: 'auto'

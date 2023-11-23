@@ -9,7 +9,6 @@
 
 	async function getBooks(q: string) {
 		const res = await api.get<Book[]>('/books?q=' + q);
-		console.log(res.data);
 		return res.data;
 	}
 </script>
