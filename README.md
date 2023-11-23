@@ -9,6 +9,8 @@ A simple book comments app to the distributed systems class
 - Install the dependencies using `npm i`
 - Create a `.env` by copying `.env.example`
 - Run the database using `docker compose up -d`
+- Run the migrations using `npx prisma migrate dev`
+- Run using `npm run dev`
 
 ## Gateway
 
