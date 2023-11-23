@@ -18,7 +18,7 @@ export async function signIn(idToken: string): Promise<SignInResult> {
     user = await db.user.create({ data: { email, name } });
   }
 
-  const token = jwt.sign(user.id, JWT_SECRET);
+  const token = jwt.sign(user.id, JWT_SECRET, { algorithm: "HS256" });
 
   return { user, token };
 }
