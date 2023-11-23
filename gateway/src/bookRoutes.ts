@@ -5,7 +5,7 @@ import { BooksVolume, BooksVolumes } from "./booksVolumes";
 const router = Router();
 export const bookRoutes = router;
 
-router.use("/books/:id", async (req, res) => {
+router.get("/:id", async (req, res) => {
   const id = req.params.id;
 
   const booksRes = await fetch(
@@ -23,7 +23,7 @@ router.use("/books/:id", async (req, res) => {
   return res.json(book);
 });
 
-router.use("/books", async (req, res) => {
+router.get("/", async (req, res) => {
   const q = req.query.q as string;
   if (!q) res.status(400).send("missing bookId query param");
   const booksRes = await fetch(

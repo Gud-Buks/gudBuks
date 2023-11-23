@@ -10,10 +10,10 @@ import { JWT_SECRET } from "./env";
 const app = express();
 app.use(json());
 
-app.use("/api/v1/auth", authRouter);
-
+app.use("/auth", authRouter);
 app.use(expressjwt({ secret: JWT_SECRET, algorithms: ["HS256"] }));
-app.use("/api/v1/comments", commentRouter);
+
+app.use("/comments", commentRouter);
 app.use(errorMiddleware);
 
 const port = 3000;
