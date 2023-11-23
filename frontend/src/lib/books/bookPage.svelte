@@ -2,16 +2,10 @@
 	import { api } from '$lib/api';
 	import type { Book } from '$lib/types/book';
 	import type { Comment } from '$lib/types/comment';
-	import TimeAgo from 'javascript-time-ago';
-	import en from 'javascript-time-ago/locale/en';
-	import pt from 'javascript-time-ago/locale/pt';
 	import CommentsSection from './commentsSection.svelte';
 	import GoBackLink from './goBackLink.svelte';
 
 	export let id: string;
-
-	TimeAgo.addDefaultLocale(en);
-	TimeAgo.addLocale(pt);
 
 	async function getBook() {
 		const res = await api.get<Book>('/books/' + id);
@@ -22,8 +16,6 @@
 		const res = await api.get<Comment[]>('/comments?bookId=' + id);
 		return res.data;
 	}
-
-	let userComments: Comment[] = [];
 </script>
 
 {#await getBook()}

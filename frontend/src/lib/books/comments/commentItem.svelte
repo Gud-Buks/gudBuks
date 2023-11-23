@@ -1,10 +1,9 @@
 <script lang="ts">
 	import type { Comment } from '$lib/types/comment';
-	import TimeAgo from 'javascript-time-ago';
+	import { timeAgo } from '../timeAgo';
 
 	export let comment: Comment;
 
-	const timeAgo = new TimeAgo(['en', 'pt']);
 	const date = new Date(comment.createdAt);
 </script>
 
@@ -17,7 +16,7 @@
 			{comment?.user?.name}
 		</div>
 		<div>
-			{timeAgo.format(date)}
+			{timeAgo(date)}
 		</div>
 	</div>
 </div>
