@@ -15,6 +15,11 @@ A simple book comments app to the distributed systems class
 - Install the dependencies using `npm i`
 - Run using `npm run dev`
 
+## Gateway
+
+- Install the dependencies using `npm i`
+- Run using `npm run dev`
+
 ## Mock
 
 - Install the dependencies using `npm i`
