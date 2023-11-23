@@ -6,7 +6,7 @@
   import CommentsSection from './commentsSection.svelte';
   import GoBackLink from './goBackLink.svelte';
   import LoadingSection from './loadingSection.svelte';
-  import me from '$lib/user/meStore.ts';
+  import { me } from '$lib/user/meStore.ts';
 
   export let id: string;
 

@@ -1,22 +1,35 @@
 <script lang="ts">
-	import type { Comment } from '$lib/types/comment';
-	import { timeAgo } from '../timeAgo';
+  import type { Comment } from '$lib/types/comment';
+  import { timeAgo } from '../timeAgo';
+  import { api } from '$lib/api';
 
-	export let comment: Comment;
+  export let comment: Comment;
+  
+  const date = new Date(comment.createdAt);
+  const id = comment.id;
 
-	const date = new Date(comment.createdAt);
+  async function deleteComment() {
+    try {
+      await api.delete(`/comment/${id}`);
+    } catch (error) {
+      console.error('Erro ao excluir o comentário', error);
+    }
+  }
 </script>
 
 <div>
-	<div>
-		{comment.text}
-	</div>
-	<div class="opacity-50 flex-row gap-2">
-		<div>
-			{comment?.user?.name}
-		</div>
-		<div>
-			{timeAgo(date)}
-		</div>
-	</div>
+  <div>
+    {comment.text}
+  </div>
+  <div class="opacity-50 flex-row gap-2">
+    <div>
+      {comment?.user?.name}
+    </div>
+    <div>
+      {timeAgo(date)}
+    </div>
+    <button on:click={deleteComment}>
+      Excluir Comentário
+    </button>
+  </div>
 </div>
