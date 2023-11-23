@@ -1,14 +1,20 @@
 <script lang="ts">
-	import { api } from '$lib/api';
+	import { goto } from '$app/navigation';
+	import { api, setApiAuthToken } from '$lib/api';
+	import type { User } from '$lib/types/user';
 	import { onMount } from 'svelte';
+	import { tokenStorageName } from './tokenStorageName';
+
+	async function handleCredentialResponse(response: google.accounts.id.CredentialResponse) {
+		const { credential } = response;
+		const res = await api.post<{ user: User; token: string }>('/auth/sign-in', { credential });
+		const { user, token } = res.data;
+		setApiAuthToken(token);
+		localStorage.setItem(tokenStorageName, token);
+		goto('/books');
+	}
 
 	onMount(async () => {
-		const handleCredentialResponse = async (response: google.accounts.id.CredentialResponse) => {
-			const { credential } = response;
-			console.log(credential);
-			const user = await api.post('/auth/sign-in', { credential });
-			console.log(user);
-		};
 		google.accounts.id.initialize({
 			client_id: '764935952135-pq9vunhl6j03lams42b2rroh4babii7r.apps.googleusercontent.com',
 			callback: handleCredentialResponse
