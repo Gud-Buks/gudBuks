@@ -6,5 +6,6 @@ export function errorMiddleware(
   res: Response,
   next: NextFunction
 ) {
+  console.error(error);
   return res.status(500).send();
 }
