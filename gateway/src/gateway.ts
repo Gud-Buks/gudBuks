@@ -7,7 +7,7 @@ import { BooksVolume, BooksVolumes } from "./booksVolumes";
 import { errorMiddleware } from "./errorMiddleware";
 
 const app = express();
-const port = 8585;
+const port = 8080;
 
 app.use(cors());
 
@@ -49,7 +49,7 @@ app.use("/books", async (req, res) => {
   return res.json(books);
 });
 
-app.use("/", proxy("http://localhost:8080"));
+app.use("/", proxy("http://localhost:3000"));
 
 app.use(errorMiddleware);
 
