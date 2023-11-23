@@ -4,6 +4,7 @@
 	import type { Comment } from '$lib/types/comment';
 	import CommentsSection from './commentsSection.svelte';
 	import GoBackLink from './goBackLink.svelte';
+	import LoadingSection from './loadingSection.svelte';
 
 	export let id: string;
 
@@ -19,7 +20,7 @@
 </script>
 
 {#await getBook()}
-	<div>loading</div>
+	<LoadingSection />
 {:then book}
 	<div class="flex-1 items-center">
 		<div class="p-6 gap-6 items-center flex-1 w-full max-w-5xl">
@@ -49,7 +50,7 @@
 						</div>
 					</section>
 					{#await getComments()}
-						<div>loading</div>
+						<LoadingSection />
 					{:then comments}
 						<CommentsSection {comments} bookId={id} />
 					{/await}

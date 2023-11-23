@@ -2,6 +2,7 @@
 	import { api } from '$lib/api';
 	import type { Book } from '$lib/types/book';
 	import BookItem from './bookItem.svelte';
+	import LoadingSection from './loadingSection.svelte';
 
 	export let q: string | null;
 
@@ -33,7 +34,7 @@
 	<div class="p-2 text-center">The books options will be shown here once you search</div>
 {:else}
 	{#await getBooks(q)}
-		<div>loading</div>
+		<LoadingSection />
 	{:then books}
 		<div class="items-center">
 			<div class="flex-row gap-2 flex-wrap w-full max-w-4xl">
