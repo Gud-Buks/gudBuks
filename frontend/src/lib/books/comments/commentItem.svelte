@@ -4,13 +4,14 @@
   import { api } from '$lib/api';
 
   export let comment: Comment;
-  
+
   const date = new Date(comment.createdAt);
   const id = comment.id;
 
   async function deleteComment() {
     try {
       await api.delete(`/comment/${id}`);
+	  console.log('Comentário excluído com sucesso!');
     } catch (error) {
       console.error('Erro ao excluir o comentário', error);
     }
