@@ -27,7 +27,7 @@
 	}
 </script>
 
-<form action="?/comments" class="gap-2" on:submit={handleSubmit}>
+<form class="gap-2" on:submit={handleSubmit}>
 	<textarea
 		id="text"
 		required
