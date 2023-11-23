@@ -4,9 +4,17 @@
   import { api } from '$lib/api';
 
   export let comment: Comment;
-	
+  
   const date = new Date(comment.createdAt);
+  const id = comment.id;
 
+  async function deleteComment() {
+    try {
+      await api.delete(`/comment/${id}`);
+    } catch (error) {
+      console.error('Erro ao excluir o comentário', error);
+    }
+  }
 </script>
 
 <div>
@@ -20,7 +28,7 @@
     <div>
       {timeAgo(date)}
     </div>
-    <button on:click={api.delete('/comment/'+id)}>
+    <button on:click={deleteComment}>
       Excluir Comentário
     </button>
   </div>
