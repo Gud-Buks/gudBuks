@@ -1,8 +1,11 @@
+// commentRoutes.ts
+
 import { Router } from "express";
+import { AuthRequest } from "../auth/authRequest";
 import { createComment } from "./createComment";
+import { deleteComment } from "./deleteComment";
 import { getComment } from "./getComment";
 import { getComments } from "./getComments";
-import { AuthRequest } from "../auth/authRequest";
 
 const router = Router();
 
@@ -28,6 +31,26 @@ router.post("/", async (req: AuthRequest, res) => {
 
   const comment = await createComment({ bookId, text, userId });
   return res.json(comment);
+});
+
+router.delete("/:id", async (req: AuthRequest, res) => {
+  try {
+    const { id } = req.params;
+    const userId = req.auth;
+
+    const result = await deleteComment({
+      commentId: id,
+      userId,
+    });
+
+    if (result) {
+      res.status(200).json({ message: "Comentário excluído com sucesso" });
+    } else {
+      res.status(404).json({ message: "Comentário não encontrado" });
+    }
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 });
 
 export const commentRouter = router;
