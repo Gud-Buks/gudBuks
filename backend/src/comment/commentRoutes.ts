@@ -1,9 +1,16 @@
 import { Router } from "express";
 import { Request as AuthRequest } from "express-jwt";
 import { createComment } from "./createComment";
+import { getComment } from "./getComment";
 import { getComments } from "./getComments";
 
 const router = Router();
+
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  const comment = await getComment(id);
+  return res.json(comment);
+});
 
 router.get("/", async (req, res) => {
   const bookId = req.query.bookId as string;
