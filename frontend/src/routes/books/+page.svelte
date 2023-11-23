@@ -5,4 +5,4 @@
 	export let data: PageData;
 </script>
 
-<BooksPage q={data.q} books={data.books} />
+<BooksPage q={data.q} />
