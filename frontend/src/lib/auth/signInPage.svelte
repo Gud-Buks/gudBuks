@@ -32,8 +32,8 @@
 		</div>
 		<div id="buttonDiv" class="h-10 min-w-[20rem]" />
 		<div class="font-mono text-sm text-green-700">
-			/** Como esse app não é verificado pelo Google, é preciso usar o email acadêmico. Por exemplo:
-			john.doe@academico.ifpb.edu.br **/
+			/* Como esse app não é verificado pelo Google, é preciso usar o email acadêmico. Por exemplo:
+			john.doe@academico.ifpb.edu.br */
 		</div>
 	</div>
 	<div class="block text-xs">
