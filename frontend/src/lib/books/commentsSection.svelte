@@ -5,18 +5,14 @@
 
 	export let bookId: string;
 	export let comments: Comment[];
-	export let userComments: Comment[] = [];
 </script>
 
 <section class="gap-4">
 	<h2>Comments</h2>
+	<CommentForm {bookId} bind:comments />
 	{#await comments}
 		<div>Loading...</div>
 	{:then comments}
-		<CommentForm {bookId} bind:comments={userComments} />
-		{#if userComments.length}
-			<CommentList comments={userComments} />
-		{/if}
 		<CommentList {comments} />
 	{/await}
 </section>
