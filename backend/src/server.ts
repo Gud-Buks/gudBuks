@@ -3,7 +3,6 @@ import "express-async-errors";
 import { authRouter } from "./auth/authRoutes";
 import { commentRouter } from "./comment/commentRoutes";
 import { errorMiddleware } from "./errorMiddleware";
-
 import { userRouter } from "./user/userRoutes";
 
 const app = express();
