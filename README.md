@@ -19,6 +19,8 @@ A simple book comments app to the distributed systems class
 - Install the dependencies using `npm i`
 - Run using `npm run dev`
 
+Once the gateway is running, you can access the Swagger documentation in http://localhost:8080/api-docs
+
 ## Frontend
 
 - Install the dependencies using `npm i`
