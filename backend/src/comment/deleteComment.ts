@@ -1,30 +1,20 @@
-import { Comment } from "@prisma/client";
 import { db } from "../db";
 
 type DeleteCommentDto = {
-    commentId: string;
-    userId: string;
+  id: string;
+  userId: string;
 };
 
-export async function deleteComment({
-    commentId,
-    userId,
-}: DeleteCommentDto): Promise<Comment | null> {
-    // Verificar se o usuário tem permissão para excluir o comentário
-    const existingComment = await db.comment.findUnique({
-        where: { id: commentId },
-    });
+export async function deleteComment({ id, userId }: DeleteCommentDto) {
+  const comment = await db.comment.findUnique({ where: { id } });
 
-    if (!existingComment) {
-        throw new Error("Comentário não encontrado");
-    }
+  if (!comment) {
+    throw { status: 400, message: "Comment not found" };
+  }
 
-    if (existingComment.userId !== userId) {
-        throw new Error("Usuário não tem permissão para excluir este comentário");
-    }
+  if (comment.userId !== userId) {
+    throw { status: 401, message: "Unauthorized comment delete" };
+  }
 
-    // Excluir o comentário
-    return db.comment.delete({
-        where: { id: commentId },
-    });
+  await db.comment.delete({ where: { id } });
 }

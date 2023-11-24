@@ -35,23 +35,9 @@ router.post("/", jwtMiddleware, async (req: AuthRequest, res) => {
 });
 
 router.delete("/:id", jwtMiddleware, async (req: AuthRequest, res) => {
-  try {
-    const { id } = req.params;
-    const userId = req.auth;
-
-    const result = await deleteComment({
-      commentId: id,
-      userId,
-    });
-
-    if (result) {
-      res.status(200).json({ message: "Comentário excluído com sucesso" });
-    } else {
-      res.status(404).json({ message: "Comentário não encontrado" });
-    }
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
+  const { id } = req.params;
+  const userId = req.auth;
+  await deleteComment({ id, userId });
 });
 
 export const commentRouter = router;
