@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { api } from '$lib/api';
-	import type { Comment } from '$lib/types/comment';
 	import { me } from '$lib/user/meStore';
 	import { Moon } from 'svelte-loading-spinners';
+	import { comments } from './commentStore';
 
 	export let bookId: string;
-	export let comments: Comment[];
-	let loading = false;
 
 	let text: string;
+	let loading = false;
+
 	async function handleSubmit(e: SubmitEvent) {
 		e.preventDefault();
 		loading = true;
@@ -19,9 +19,7 @@
 		const resFromPost = await api.post('/comments', { bookId, text });
 		const resFromGet = await api.get('/comments/' + resFromPost.data.id);
 
-		comments.unshift(resFromGet.data);
-		// force refresh
-		comments = comments;
+		comments.update((comments) => [resFromGet.data, ...comments]);
 
 		text = '';
 		loading = false;

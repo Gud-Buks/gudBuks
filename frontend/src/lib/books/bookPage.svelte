@@ -1,35 +1,16 @@
 <script lang="ts">
 	import { api } from '$lib/api';
 	import type { Book } from '$lib/types/book';
-	import type { Comment } from '$lib/types/comment';
 	import MeLink from '$lib/user/meLink.svelte';
-	import { me } from '$lib/user/meStore';
 	import CommentsSection from './commentsSection.svelte';
 	import GoBackLink from './goBackLink.svelte';
 	import LoadingSection from './loadingSection.svelte';
 
 	export let id: string;
 
-	let comments: Comment[] = [];
-
 	async function getBook(): Promise<Book> {
 		const res = await api.get<Book>('/books/' + id);
 		return res.data;
-	}
-
-	async function getComments(): Promise<Comment[]> {
-		const res = await api.get<Comment[]>('/comments?bookId=' + id);
-		return res.data;
-	}
-
-	async function deleteComment(commentId: string): Promise<void> {
-		try {
-			const res = await api.delete(`/comments/${commentId}`);
-			console.log(res.data);
-			comments = await getComments();
-		} catch (error) {
-			console.error('Erro ao excluir comentário:', error);
-		}
 	}
 </script>
 
@@ -60,17 +41,7 @@
 						<h2>Release date</h2>
 						<div>{new Date(book.publishedDate).toLocaleDateString()}</div>
 					</section>
-					{#await getComments()}
-						<LoadingSection />
-					{:then comments}
-						<CommentsSection {comments} bookId={id}>
-							{#each comments as comment (comment.id)}
-								{#if $me !== undefined && comment.user !== undefined && comment.user.id === $me.id}
-									<button on:click={() => deleteComment(comment.id)}> Excluir Comentário </button>
-								{/if}
-							{/each}
-						</CommentsSection>
-					{/await}
+					<CommentsSection bookId={id} />
 				</div>
 			</div>
 		</div>
