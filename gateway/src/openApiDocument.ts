@@ -114,9 +114,14 @@ export const openApiDocument = {
         },
       },
     },
-    "/me": {
+    "/users/me": {
       get: {
         summary: "Get information about the logged-in user",
+        security: [
+          {
+            ApiKeyAuth: [],
+          },
+        ],
         responses: {
           "200": {
             description: "Successful response",
@@ -177,6 +182,11 @@ export const openApiDocument = {
       },
       post: {
         summary: "Add a new comment",
+        security: [
+          {
+            ApiKeyAuth: [],
+          },
+        ],
         requestBody: {
           required: true,
           content: {
@@ -198,6 +208,11 @@ export const openApiDocument = {
     "/comments/{id}": {
       delete: {
         summary: "Delete a specific comment",
+        security: [
+          {
+            ApiKeyAuth: [],
+          },
+        ],
         parameters: [
           {
             name: "id",
@@ -214,6 +229,17 @@ export const openApiDocument = {
             description: "Comment deleted successfully",
           },
         },
+      },
+    },
+  },
+  components: {
+    securitySchemes: {
+      ApiKeyAuth: {
+        type: "apiKey",
+        in: "header",
+        description:
+          "The token form /auth/sign-in, but with 'Bearer ' in the beginning of the string",
+        name: "Authorization",
       },
     },
   },
