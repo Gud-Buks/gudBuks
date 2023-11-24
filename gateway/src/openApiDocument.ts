@@ -55,15 +55,35 @@ export const openApiDocument = {
         },
       },
     },
+    "/auth/sign-in": {
+      post: {
+        description: "Sign in with Google to allow editing",
+        parameters: [
+          {
+            name: "credential",
+            in: "body",
+            description:
+              "credential returned by Google on successful authentication",
+            required: true,
+            type: "string",
+          },
+        ],
+        responses: {
+          "200": {
+            description: "the user and token to authentication",
+            schema: {
+              $ref: "#/definitions/SignInResponse",
+            },
+          },
+        },
+      },
+    },
   },
 
   definitions: {
     Book: {
       type: "object",
       allOf: [
-        {
-          $ref: "#/definitions/NewPet",
-        },
         {
           required: ["id", "title"],
           properties: {
@@ -92,6 +112,34 @@ export const openApiDocument = {
           },
         },
       ],
+    },
+    User: {
+      type: "object",
+      allOf: [
+        {
+          required: ["id", "name"],
+          properties: {
+            id: {
+              type: "string",
+            },
+            name: {
+              type: "string",
+            },
+            picture: {
+              type: "string",
+            },
+          },
+        },
+      ],
+    },
+    SignInResponse: {
+      type: "object",
+      properties: {
+        user: {
+          $ref: "#/definitions/User",
+        },
+        token: "string",
+      },
     },
   },
 };
