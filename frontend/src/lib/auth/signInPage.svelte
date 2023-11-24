@@ -8,6 +8,7 @@
 
 	async function handleCredentialResponse(response: google.accounts.id.CredentialResponse) {
 		const { credential } = response;
+		console.log(credential);
 		const res = await api.post<{ user: User; token: string }>('/auth/sign-in', { credential });
 		const { user, token } = res.data;
 		me.set(user);

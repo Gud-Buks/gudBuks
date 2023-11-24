@@ -3,6 +3,7 @@ export const openApiDocument = {
   info: {
     title: "Gudbuks API",
     version: "1.0.0",
+    description: "A simple book comments app to the distributed systems class",
   },
   paths: {
     "/books": {
@@ -84,17 +85,19 @@ export const openApiDocument = {
     "/auth/sign-in": {
       post: {
         summary: "Sign in and get user information with token",
-        parameters: [
-          {
-            name: "credential",
-            in: "body",
-            description: "Google login credential",
-            required: true,
-            schema: {
-              type: "string",
+        requestBody: {
+          required: true,
+          content: {
+            "application/json": {
+              schema: {
+                $ref: "#/components/schemas/SignInRequest",
+              },
+              example: {
+                credential: "your_credential_string",
+              },
             },
           },
-        ],
+        },
         responses: {
           "200": {
             description: "Successful response",
@@ -240,6 +243,21 @@ export const openApiDocument = {
         description:
           "The token form /auth/sign-in, but with 'Bearer ' in the beginning of the string",
         name: "Authorization",
+      },
+    },
+    schemas: {
+      SignInRequest: {
+        type: "object",
+        properties: {
+          credential: {
+            type: "string",
+            description: "Credential returned by Google after successful login",
+          },
+        },
+        required: ["credential"],
+        example: {
+          credential: "your_credential_string",
+        },
       },
     },
   },
