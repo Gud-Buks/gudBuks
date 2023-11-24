@@ -2,6 +2,7 @@
 
 import { Router } from "express";
 import { AuthRequest } from "../auth/authRequest";
+import { jwtMiddleware } from "../jwtMiddleware";
 import { createComment } from "./createComment";
 import { deleteComment } from "./deleteComment";
 import { getComment } from "./getComment";
@@ -22,7 +23,7 @@ router.get("/", async (req, res) => {
   return res.json(comments);
 });
 
-router.post("/", async (req: AuthRequest, res) => {
+router.post("/", jwtMiddleware, async (req: AuthRequest, res) => {
   const { bookId, text } = req.body;
   if (!bookId) res.status(400).send("Missing bookId on request body");
   if (!text) res.status(400).send("Missing text on request body");
@@ -33,7 +34,7 @@ router.post("/", async (req: AuthRequest, res) => {
   return res.json(comment);
 });
 
-router.delete("/:id", async (req: AuthRequest, res) => {
+router.delete("/:id", jwtMiddleware, async (req: AuthRequest, res) => {
   try {
     const { id } = req.params;
     const userId = req.auth;
