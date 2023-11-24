@@ -10,7 +10,6 @@
 
 	export let id: string;
 
-	let userId = $me;
 	let comments: Comment[] = [];
 
 	async function getBook(): Promise<Book> {
