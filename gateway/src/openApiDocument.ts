@@ -1,29 +1,47 @@
 export const openApiDocument = {
   openapi: "3.1.0",
   info: {
-    title: "Gudbuks",
-    summary: "A simple book comments app to the distributed systems class",
+    title: "Bookstore API",
+    version: "1.0.0",
   },
   paths: {
     "/books": {
       get: {
-        description: "Get books that matches a text query",
+        summary: "Get a list of books based on search query",
         parameters: [
           {
             name: "q",
             in: "query",
-            description: "Text query to search by",
+            description: "Text for search",
             required: true,
-            type: "string",
+            schema: {
+              type: "string",
+            },
           },
         ],
         responses: {
           "200": {
-            description: "books that match the query",
-            schema: {
-              type: "array",
-              items: {
-                $ref: "#/definitions/Book",
+            description: "Successful response",
+            content: {
+              "application/json": {
+                example: [
+                  {
+                    id: "1",
+                    cover: "book1.jpg",
+                    title: "Sample Book 1",
+                    authors: ["Author 1"],
+                    description: "A sample book description.",
+                    publishedDate: "2022-01-01",
+                  },
+                  {
+                    id: "2",
+                    cover: "book2.jpg",
+                    title: "Sample Book 2",
+                    authors: ["Author 2"],
+                    description: "Another sample book description.",
+                    publishedDate: "2022-02-01",
+                  },
+                ],
               },
             },
           },
@@ -32,113 +50,170 @@ export const openApiDocument = {
     },
     "/books/{id}": {
       get: {
-        description: "Get one book by id",
+        summary: "Get details of a specific book",
         parameters: [
           {
             name: "id",
             in: "path",
-            description: "Id to search by",
+            description: "ID of the book",
             required: true,
-            type: "string",
+            schema: {
+              type: "string",
+            },
           },
         ],
         responses: {
           "200": {
-            description: "book that have the id",
-            schema: {
-              $ref: "#/definitions/Book",
+            description: "Successful response",
+            content: {
+              "application/json": {
+                example: {
+                  id: "1",
+                  cover: "book1.jpg",
+                  title: "Sample Book 1",
+                  authors: ["Author 1"],
+                  description: "A sample book description.",
+                  publishedDate: "2022-01-01",
+                },
+              },
             },
-          },
-          "404": {
-            description: "not found the book with the id",
           },
         },
       },
     },
     "/auth/sign-in": {
       post: {
-        description: "Sign in with Google to allow editing",
+        summary: "Sign in and get user information with token",
         parameters: [
           {
             name: "credential",
             in: "body",
-            description:
-              "credential returned by Google on successful authentication",
+            description: "Google login credential",
             required: true,
-            type: "string",
+            schema: {
+              type: "string",
+            },
           },
         ],
         responses: {
           "200": {
-            description: "the user and token to authentication",
-            schema: {
-              $ref: "#/definitions/SignInResponse",
+            description: "Successful response",
+            content: {
+              "application/json": {
+                example: {
+                  user: {
+                    id: "123",
+                    name: "John Doe",
+                    picture: "user.jpg",
+                  },
+                  token: "your_access_token",
+                },
+              },
             },
           },
         },
       },
     },
-  },
-
-  definitions: {
-    Book: {
-      type: "object",
-      allOf: [
-        {
-          required: ["id", "title"],
-          properties: {
-            id: {
-              type: "string",
-            },
-            cover: {
-              type: "string",
-            },
-            title: {
-              type: "string",
-            },
-            description: {
-              type: "string",
-            },
-            publishedDate: {
-              type: "string",
-              format: "date",
-            },
-            authors: {
-              type: "array",
-              items: {
-                type: "string",
+    "/me": {
+      get: {
+        summary: "Get information about the logged-in user",
+        responses: {
+          "200": {
+            description: "Successful response",
+            content: {
+              "application/json": {
+                example: {
+                  id: "123",
+                  name: "John Doe",
+                  picture: "user.jpg",
+                },
               },
             },
           },
         },
-      ],
+      },
     },
-    User: {
-      type: "object",
-      allOf: [
-        {
-          required: ["id", "name"],
-          properties: {
-            id: {
-              type: "string",
-            },
-            name: {
-              type: "string",
-            },
-            picture: {
+    "/comments": {
+      get: {
+        summary: "Get a list of comments",
+        parameters: [
+          {
+            name: "bookId",
+            in: "query",
+            description: "Book id to get comments of",
+            required: true,
+            schema: {
               type: "string",
             },
           },
+        ],
+        responses: {
+          "200": {
+            description: "Successful response",
+            content: {
+              "application/json": {
+                example: [
+                  {
+                    id: "1",
+                    text: "This is a great book!",
+                    createdAt: "2022-01-05T12:00:00Z",
+                    updatedAt: "2022-01-05T12:30:00Z",
+                    bookId: "1",
+                    userId: "123",
+                  },
+                  {
+                    id: "2",
+                    text: "I enjoyed reading it.",
+                    createdAt: "2022-01-06T10:00:00Z",
+                    updatedAt: "2022-01-06T10:15:00Z",
+                    bookId: "2",
+                    userId: "456",
+                  },
+                ],
+              },
+            },
+          },
         },
-      ],
+      },
+      post: {
+        summary: "Add a new comment",
+        requestBody: {
+          required: true,
+          content: {
+            "application/json": {
+              example: {
+                text: "This book is amazing!",
+                bookId: "1",
+              },
+            },
+          },
+        },
+        responses: {
+          "201": {
+            description: "Comment created successfully",
+          },
+        },
+      },
     },
-    SignInResponse: {
-      type: "object",
-      properties: {
-        user: {
-          $ref: "#/definitions/User",
+    "/comments/{id}": {
+      delete: {
+        summary: "Delete a specific comment",
+        parameters: [
+          {
+            name: "id",
+            in: "path",
+            description: "ID of the comment",
+            required: true,
+            schema: {
+              type: "string",
+            },
+          },
+        ],
+        responses: {
+          "204": {
+            description: "Comment deleted successfully",
+          },
         },
-        token: "string",
       },
     },
   },
