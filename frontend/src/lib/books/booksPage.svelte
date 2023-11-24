@@ -28,7 +28,7 @@
 		<LoadingSection />
 	{:then books}
 		<div class="items-center">
-			<div class="flex-row gap-2 flex-wrap w-full max-w-4xl">
+			<div class="flex-row gap-2 flex-wrap w-full max-w-4xl justify-center">
 				{#each books as book (book.id)}
 					<BookItem {book} />
 				{/each}
