@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { api } from '$lib/api';
 	import type { Comment } from '$lib/types/comment';
+	import { me } from '$lib/user/meStore';
 	import { Moon } from 'svelte-loading-spinners';
 
 	export let bookId: string;
@@ -27,20 +28,27 @@
 	}
 </script>
 
-<form class="gap-2" on:submit={handleSubmit}>
-	<textarea
-		id="text"
-		required
-		bind:value={text}
-		placeholder="what do you think?"
-		class="bg-black/10 p-2 rounded"
-	/>
-	<div class="flex-row">
-		<button type="submit" disabled={loading} class="main-button">
-			{#if loading}
-				<Moon color={'white'} size={20} />
-			{/if}
-			<div class="group-active:scale-95">Publish</div>
-		</button>
+{#if $me}
+	<form class="gap-2" on:submit={handleSubmit}>
+		<textarea
+			id="text"
+			required
+			bind:value={text}
+			placeholder="what do you think?"
+			class="bg-black/10 p-2 rounded"
+		/>
+		<div class="flex-row">
+			<button type="submit" disabled={loading} class="main-button">
+				{#if loading}
+					<Moon color={'white'} size={20} />
+				{/if}
+				<div class="group-active:scale-95">Publish</div>
+			</button>
+		</div>
+	</form>
+{:else}
+	<div class="block">
+		<a class="main-button" href="/sign-in"> Sign In</a>
+		to comment too
 	</div>
-</form>
+{/if}
