@@ -1,7 +1,7 @@
 export const openApiDocument = {
   openapi: "3.1.0",
   info: {
-    title: "Bookstore API",
+    title: "Gudbuks API",
     version: "1.0.0",
   },
   paths: {
