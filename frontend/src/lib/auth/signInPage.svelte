@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { api, setApiAuthToken } from '$lib/api';
 	import type { User } from '$lib/types/user';
+	import { me } from '$lib/user/meStore';
 	import { onMount } from 'svelte';
 	import { tokenStorageName } from './tokenStorageName';
 
@@ -9,6 +10,7 @@
 		const { credential } = response;
 		const res = await api.post<{ user: User; token: string }>('/auth/sign-in', { credential });
 		const { user, token } = res.data;
+		me.set(user);
 		setApiAuthToken(token);
 		localStorage.setItem(tokenStorageName, token);
 		goto('/books');
